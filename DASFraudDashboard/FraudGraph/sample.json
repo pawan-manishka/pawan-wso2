@@ -1,0 +1,78 @@
+{
+  "nodes": [
+    {
+      "id": "P1",
+      "label": "P1",
+      "x": 1,
+      "y": 1,
+      "size":  1,
+        "entity":{"fields":{"account_id":"A1","address":"No48, NewRd, Colombo 3","branch_id":"B1","name":"PM Gunaratne","person_id":"P1"},"type":{"name":"Account","fields":[{"type":"String","name":"account_id","isPrimaryKey":true},{"type":"String","name":"account_name","isPrimaryKey":false},{"type":"String","name":"account_address","isPrimaryKey":false},{"type":"String","name":"branch_id","foreignEntityTypeName":"Branch","foreignEntityKeyName":"branch","relationship":"belongs to","isPrimaryKey":false},{"type":"String","name":"person_id","foreignEntityTypeName":"Person","foreignEntityKeyName":"person_id","relationship":"belongs to","isPrimaryKey":false}]
+        }}
+    },
+    {
+      "id": "A1",
+      "label": "A1",
+      "x":1,
+      "y":1 ,
+      "size": 1
+    },
+    {
+      "id": "B1",
+      "label": "B1",
+      "x": 1,
+      "y": 1,
+      "size": 1
+    },
+      {
+      "id": "A2",
+      "label": "A2",
+      "x": 1,
+      "y": 1,
+      "size": 1
+    },
+      {
+      "id": "T1",
+      "label": "T1",
+      "x": 1,
+      "y": 1,
+      "size": 1
+    },
+      {
+      "id": "T2",
+      "label": "T2",
+      "x": 1,
+      "y": 1,
+      "size": 1
+    }
+  ],
+  "edges": [
+    {
+      "id": "A1B1",
+      "source": "A1",
+      "target": "B1"
+    },
+    {
+      "id": "T2A2",
+      "source": "T2",
+      "target": "A2"
+    },
+    {
+      "id": "T1A1",
+      "source": "T1",
+      "target": "A1"
+    },
+      {
+      "id": "A2P1",
+      "source": "A2",
+      "target": "P1"
+    },{
+      "id": "A1P1",
+      "source": "A1",
+      "target": "P1"
+    },{
+      "id": "A2B1",
+      "source": "A2",
+      "target": "B1"
+    }
+  ]
+}
